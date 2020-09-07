@@ -1,0 +1,3 @@
+Directions on setting up the custom media player and progress bar were derived from:
+https://developer.mozilla.org/en-US/docs/Web/Guide/Audio_and_video_delivery/Video_player_styling_basics
+
