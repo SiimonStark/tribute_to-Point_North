@@ -1,13 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Tribute to PointNorth From SiimonStark</title>
 </head>
+
 <body>
     <audio controls>
-        <source src="https://t4.bcbits.com/stream/2bce9522d6730e73694822ec16d092e7/mp3-128/4141159480?p=0&ts=1599530482&t=ca57b6ceb3e18be48c280b682a07ba48a5ab2668&token=1599530482_904a80063a2ee68e93026d3d5c0b29f33ce11b7e"/>
+        <source
+            src="https://t4.bcbits.com/stream/2bce9522d6730e73694822ec16d092e7/mp3-128/4141159480?p=0&ts=1599530482&t=ca57b6ceb3e18be48c280b682a07ba48a5ab2668&token=1599530482_904a80063a2ee68e93026d3d5c0b29f33ce11b7e" />
     </audio>
+    <section class="music-player" data-state="hidden">
+        <button id="playButton" data-state="play">
+            <img src="./assets/Polygon 1.png" alt="play button, teal fade"/>
+        </button>
+        <button id="pauseButton" data-state="pause">
+            <img src="./assets/Group 1.png" alt="pause button, teal fade" />
+        </button>
+        <div class="progress">
+            <progress id="progress" value="0" min="0">
+                <span id="progress-bar"></span>
+            </progress>
+        </div>
+        <button id="volinc" type="button" data-state="volup">
+            <img src="./assets/Group 2.png" alt="volup button, teal fade" />
+        </button>
+        <button id="voldec" type="button" data-state="voldown">
+            <img src="./assets/Rectangle 1.png" alt="voldown button, teal fade" />
+        </button>
+    </section>
+    <script src="./scripts.js"></script>
 </body>
+
 </html>

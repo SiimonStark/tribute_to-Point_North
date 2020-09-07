@@ -1,0 +1,45 @@
+body {
+    background-color: rgb(39, 39, 39);
+}
+
+audio {
+    display: none;
+    content: "";
+    height: 30px;
+    width: 100%;
+}
+.music-player {
+    position: relative;
+}
+
+.music-player .progress {
+    cursor: pointer;
+}
+/* .music-player[data-state=hidden] {
+    display: none;
+}
+.music-player[data-state=visible] {
+    display: block;
+} */
+
+.music-player button {
+    background:  none;
+    background-color:  none;
+    border: none;
+}
+
+.music-player *:hover {
+    cursor: pointer;
+}
+
+progress[data-state="fake"] {
+    background:#e6e6e6;
+    height:2rem;
+ }
+
+ progress span {
+    width:0%;
+    height:100%;
+    display:inline-block;
+    background-color:#2a84cd;  
+ }
