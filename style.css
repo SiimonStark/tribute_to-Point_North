@@ -2,6 +2,10 @@ html {
     background-color: rgb(39, 39, 39);
 }
 
+.album-cover {
+    width: 50vw;
+}
+
 audio {
     display: none;
     content: "";
@@ -30,6 +34,14 @@ audio {
 
 .music-player *:hover {
     cursor: pointer;
+}
+
+#play {
+    display: block;
+}
+
+#pause {
+    display: none;
 }
 
 /* progress[data-state="fake"] {

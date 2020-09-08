@@ -8,8 +8,16 @@ const controls = document.querySelectorAll('.controls');
 // var album = import('./music');
 
 console.log('Hello World')
-play.addEventListener('click', () => audio.play());
-pause.addEventListener('click', () => audio.pause());
+play.addEventListener('click', () => {
+    audio.play();
+    pause.style.display = "block"; 
+    play.style.display = "none";
+});
+pause.addEventListener('click', () => {
+    audio.pause();
+    pause.style.display = "none"; 
+    play.style.display = "block";
+});
 
 musicPlayer.setAttribute('data-state', 'visible');
 
