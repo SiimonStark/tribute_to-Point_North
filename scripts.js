@@ -64,6 +64,15 @@ const handleAction = (event) => {
             currentTrack > 0 ? currentTrack-- : currentTrack = 4;
             updateTrack();
             break;
+        case 'mute':
+            audio.muted ? audio.muted = false : audio.muted = true;
+            break;
+        case 'voldec':
+            audio.volume >= 0.1 ? (audio.volume = audio.volume - .1): null;
+            break;
+        case 'volinc':
+            audio.volume <= .9 ? (audio.volume = audio.volume + .1): null;
+            break;
         default: 
             console.log('DEFAULT');
             break;
